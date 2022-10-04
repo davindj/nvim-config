@@ -14,6 +14,7 @@ This is my simple nvim 0.8.0 config for my daily working.
 ### Main
 - Config for newest [neovim](https://neovim.io) 0.8.0
 - Use [**Packer**](https://github.com/wbthomason/packer.nvim) as nvim plugin manager
+
 ### Plugins & Features
 - **Easy File Navigation** with [**Telescope**](https://github.com/nvim-telescope/telescope.nvim). 
     - Find file like `ctrl` + `p` in vsc*de
@@ -32,14 +33,12 @@ This is my simple nvim 0.8.0 config for my daily working.
 - **Project Structure** with [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua). see project structure and interact with your file.
 - **Customized Start Screen** with [startify](https://github.com/mhinz/vim-startify), show your recently edited files and bookmarked files. you can also go to that file.
 - **Discord Rich Presence** with [presence](https://github.com/andweeb/presence.nvim) , show what you working now and time ellapse in your discord.
+
 ### Other Plugins
 - [neovim-ayu](https://github.com/Shatur/neovim-ayu), colorscheme. AYU FTW
 - [lspkind](https://github.com/onsails/lspkind.nvim), better cmp UI
 - [lualine](https://github.com/nvim-lualine/lualine.nvim), better statusline UI instead of native nvim statusline
 - [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons), icon
-
-
-
 
 
 ## 🔧 Requirement
@@ -63,6 +62,11 @@ $ nvim --version
 - **pynvim**. This is used by **ultisnips** engine for snippet.
 ```sh
 $ python3 -m pip install --user --upgrade pynvim
+```
+- **ripgrep**. This is used by **telescope** for `live_grep` features. You can install ripgrep in your OS Package Manager.
+```sh
+# for brew
+$ brew install ripgrep
 ```
 
 ### LSP Requirement 
@@ -120,6 +124,7 @@ $ nvim
 :PackerSync
 ```
 5. Done!. Enjoy my config 😜.
+
 
 ## 🎯 TODO Next
 - Try out other colorscheme

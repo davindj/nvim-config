@@ -21,9 +21,10 @@ noremap('i', 'jk', '<esc>') -- escape from insert mode by jk stroke
 
 ---- PLUGINS
 -- Telescope
-noremap('n', '<leader>ff', '<cmd>:Telescope find_files<cr>')
-noremap('n', '<leader>fg', '<cmd>:Telescope git_files<cr>')
-noremap('n', '<leader>fh', '<cmd>:Telescope help_tags<cr>')
+noremap('n', '<leader>fe', '<cmd>:Telescope find_files<cr>') -- [f]ind[e]xplicit
+noremap('n', '<leader>ff', '<cmd>:Telescope git_files<cr>') -- [f]find[f]iles git only
+noremap('n', '<leader>fh', '<cmd>:Telescope help_tags<cr>') -- [f]ind[h]elp
+noremap('n', '<leader>fs', '<cmd>:Telescope live_grep<cr>') -- [f]ind[s]tring
 
 -- Nvim Tree
 noremap('n', '<leader>nf', '<cmd>:NvimTreeFocus<cr>')
