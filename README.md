@@ -16,11 +16,11 @@ This is my simple nvim 0.8.0 config for my daily working.
 - Use [**Packer**](https://github.com/wbthomason/packer.nvim) as nvim plugin manager
 
 ### Plugins & Features
-- **Easy File Navigation** with [**Telescope**](https://github.com/nvim-telescope/telescope.nvim). 
+- **Easy File Navigation** with [**Telescope**](https://github.com/nvim-telescope/telescope.nvim) & [**Harpoon**](https://github.com/ThePrimeagen/harpoon). 
     - Find file like `ctrl` + `p` in vsc*de
     - See all commits and file changes in your git repo
     - Search manual, help, documentation.
-    - and other many awesome OP featrues.
+    - Bookmark file and navigate easily with just few keystroke
 - **LSP Integrated**. Makes neovim IDE-ish
     - Show Diagnostic such as Warning, Hint, Error of your codebase.
     - Code Action 💡

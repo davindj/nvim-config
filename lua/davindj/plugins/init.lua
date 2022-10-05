@@ -52,6 +52,12 @@ return require('packer').startup(function()
             { 'onsails/lspkind.nvim' }, -- Better UI for Doc n Window CMP
         }
     }
+    use { -- Best Navigation PLUGIN B)
+        'ThePrimeagen/harpoon',
+        requires = { 
+            { 'nvim-lua/plenary.nvim' }, -- Harpoon rely on this plugin
+        }
+    }
 
     -- Auto setup config after cloning packer.nvim
     if packer_bootstrap then
