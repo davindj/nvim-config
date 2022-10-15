@@ -50,6 +50,7 @@ return require('packer').startup(function()
             -- DONT FORGET TO INSTALL PYNVIM
             -- python3 -m pip install --user --upgrade pynvim
             { 'onsails/lspkind.nvim' }, -- Better UI for Doc n Window CMP
+            { 'honza/vim-snippets' },
         }
     }
     use { -- Best Navigation PLUGIN B)

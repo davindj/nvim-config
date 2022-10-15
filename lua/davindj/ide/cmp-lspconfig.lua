@@ -1,7 +1,3 @@
--- Use an on_attach function to only map the following keys
--- after the language server attaches to the current buffer
--- Set up nvim-cmp.
-
 ---- CMP CONFIGURATION
 local cmp = require'cmp'
 local lspkind = require('lspkind')
@@ -45,11 +41,12 @@ cmp.setup({
         ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
     }),
     sources = cmp.config.sources({
-        { name = 'nvim_lsp' }, -- Completion from LSP
         { name = 'ultisnips' }, -- For ultisnips users.
+        { name = 'nvim_lsp' }, -- Completion from LSP
     },{ -- Seperate Buffer (LAST RESORT)
         { name = 'buffer' },
     }),
+    preselect = cmp.PreselectMode.None, -- make sure select 1st element in AutoComplete. one of GO bug
     experimental = {
         ghost_text = true, 
     }
@@ -73,8 +70,8 @@ cmp.setup.cmdline(':', {
 })
 
 -- Export CMP Module
-local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
-
+-- local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 ---- SETUP LSP
 local on_attach = function(client, bufnr)

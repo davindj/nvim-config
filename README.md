@@ -130,7 +130,7 @@ $ nvim
 - Try out other colorscheme
 - Mess around with Telescope
 - Config Treesitter, especially context headline
-- Config Ultisnips and create customized snippet
+- Create customized snippet
 - LSP_SIGNATURE for better help when code writing
 - Explore linter plugin(?)
 - Explore Debugging Plugin
