@@ -31,6 +31,8 @@ This is my simple nvim 0.8.0 config for my daily working.
     - Snippet. (using [ultisnips](https://github.com/SirVer/ultisnips))
     - Show Hint & Detail Parameter during Code Writing (using [lsp_signature](https://github.com/ray-x/lsp_signature.nvim))
 - **Better source code highlighting and context navigation** with [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter).
+    - Select function & classes with motion (using [treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects))
+    - Show code context where we in such as func, class & others block (using [treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context))
 - **Project Structure** with [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua). see project structure and interact with your file.
 - **Customized Start Screen** with [startify](https://github.com/mhinz/vim-startify), show your recently edited files and bookmarked files. you can also go to that file.
 - **Discord Rich Presence** with [presence](https://github.com/andweeb/presence.nvim) , show what you working now and time ellapse in your discord.
@@ -130,13 +132,13 @@ $ nvim
 ## 🎯 TODO Next
 - Try out other colorscheme
 - Mess around with Telescope
-- Config Treesitter, especially context headline
 - Create customized snippet
 - Explore linter plugin(?)
 - Explore Debugging Plugin
-- Explore GIT-related Plugin
+- Explore GIT-related Plugin 
 - Config markdown plugin. seriously rn I use vsc*de for create this `readme.md`
 - Add keymap list in this readme
+- Replace Preview in this readme
 
 
 ## 📒 Additional Notes

@@ -29,12 +29,22 @@ return require('packer').startup(function()
             { 'nvim-lua/plenary.nvim' }, -- Telescope rely on this plugin
         }
     }
+    use { -- Best Navigation PLUGIN B)
+        'ThePrimeagen/harpoon',
+        requires = { 
+            { 'nvim-lua/plenary.nvim' }, -- Harpoon rely on this plugin
+        }
+    }
     use { 'mhinz/vim-startify' } -- vim start screen
     use { 'kyazdani42/nvim-tree.lua' }
+
     use { -- probably the best Syntax Highlighter tho
         'nvim-treesitter/nvim-treesitter',
         run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
     }
+    use { 'nvim-treesitter/nvim-treesitter-textobjects' }
+    use { 'nvim-treesitter/nvim-treesitter-context' }
+
     use { 'neovim/nvim-lspconfig' } -- MUST HAVE CONFIG for LSP
     use { 'glepnir/lspsaga.nvim', branch = 'main' } -- GG LSP PLUGIN
     use { 'ray-x/lsp_signature.nvim' }
@@ -54,12 +64,7 @@ return require('packer').startup(function()
             { 'honza/vim-snippets' },
         }
     }
-    use { -- Best Navigation PLUGIN B)
-        'ThePrimeagen/harpoon',
-        requires = { 
-            { 'nvim-lua/plenary.nvim' }, -- Harpoon rely on this plugin
-        }
-    }
+
 
     -- Auto setup config after cloning packer.nvim
     if packer_bootstrap then
