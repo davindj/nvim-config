@@ -29,6 +29,7 @@ This is my simple nvim 0.8.0 config for my daily working.
     - See document outline and navigate to each property.
     - AutoComplete. (using [cmp](https://github.com/hrsh7th/nvim-cmp))
     - Snippet. (using [ultisnips](https://github.com/SirVer/ultisnips))
+    - Show Hint & Detail Parameter during Code Writing (using [lsp_signature](https://github.com/ray-x/lsp_signature.nvim))
 - **Better source code highlighting and context navigation** with [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter).
 - **Project Structure** with [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua). see project structure and interact with your file.
 - **Customized Start Screen** with [startify](https://github.com/mhinz/vim-startify), show your recently edited files and bookmarked files. you can also go to that file.
@@ -131,7 +132,6 @@ $ nvim
 - Mess around with Telescope
 - Config Treesitter, especially context headline
 - Create customized snippet
-- LSP_SIGNATURE for better help when code writing
 - Explore linter plugin(?)
 - Explore Debugging Plugin
 - Explore GIT-related Plugin

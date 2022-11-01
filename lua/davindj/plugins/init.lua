@@ -37,6 +37,7 @@ return require('packer').startup(function()
     }
     use { 'neovim/nvim-lspconfig' } -- MUST HAVE CONFIG for LSP
     use { 'glepnir/lspsaga.nvim', branch = 'main' } -- GG LSP PLUGIN
+    use { 'ray-x/lsp_signature.nvim' }
 
     use { -- Completer Engine
         'hrsh7th/nvim-cmp',
