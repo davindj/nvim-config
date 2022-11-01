@@ -67,6 +67,7 @@ return require('packer').startup(function()
     }
 
     use { 'lukas-reineke/indent-blankline.nvim' } -- Indent Highlighter
+    use { 'numToStr/Comment.nvim' } -- Commentary Plugin
 
 
     -- Auto setup config after cloning packer.nvim

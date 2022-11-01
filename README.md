@@ -33,9 +33,9 @@ This is my simple nvim 0.8.0 config for my daily working.
 - **Better source code highlighting and context navigation** with [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter).
     - Select function & classes with motion (using [treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects))
     - Show code context where we in such as func, class & others block (using [treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context))
+- **Code Commentary with motion** with [Comment](https://github.com/numToStr/Comment.nvim). (also support treesitter motion)
 - **Project Structure** with [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua). see project structure and interact with your file.
 - **Customized Start Screen** with [startify](https://github.com/mhinz/vim-startify), show your recently edited files and bookmarked files. you can also go to that file.
-- **Discord Rich Presence** with [presence](https://github.com/andweeb/presence.nvim), show what you working now and time ellapse in your discord.
 
 ### Other Plugins
 - [tokyonight](https://github.com/folke/tokyonight.nvim), colorscheme. TOKIOOOO FTW
@@ -43,6 +43,7 @@ This is my simple nvim 0.8.0 config for my daily working.
 - [lualine](https://github.com/nvim-lualine/lualine.nvim), better statusline UI instead of native nvim statusline
 - [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim), indent highlighting
 - [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons), icon
+- [presence](https://github.com/andweeb/presence.nvim), Discord Rich Presence show what you working now and time ellapse in your discord.
 
 
 ## 🔧 Requirement
