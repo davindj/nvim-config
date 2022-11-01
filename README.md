@@ -41,6 +41,7 @@ This is my simple nvim 0.8.0 config for my daily working.
 - [tokyonight](https://github.com/folke/tokyonight.nvim), colorscheme. TOKIOOOO FTW
 - [lspkind](https://github.com/onsails/lspkind.nvim), better cmp UI
 - [lualine](https://github.com/nvim-lualine/lualine.nvim), better statusline UI instead of native nvim statusline
+- [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim), indent highlighting
 - [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons), icon
 
 
@@ -137,7 +138,7 @@ $ nvim
 - Explore GIT-related Plugin 
 - Config markdown plugin. seriously rn I use vsc*de for create this `readme.md`
 - Add keymap list in this readme
-- Replace Preview in this readme
+- Replace Preview NVIM in this readme (tokioooo)
 
 
 ## 📒 Additional Notes

@@ -66,6 +66,8 @@ return require('packer').startup(function()
         }
     }
 
+    use { 'lukas-reineke/indent-blankline.nvim' } -- Indent Highlighter
+
 
     -- Auto setup config after cloning packer.nvim
     if packer_bootstrap then
