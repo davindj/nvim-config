@@ -34,6 +34,12 @@ This is my simple nvim 0.8.0 config for my daily working.
     - Select function & classes with motion (using [treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects))
     - Show code context where we in such as func, class & others block (using [treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context))
 - **Code Commentary with motion** with [Comment](https://github.com/numToStr/Comment.nvim). (also support treesitter motion)
+- **Working Git File Changes** with [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
+    - Highlight Changes in sign column
+    - Jump to changes
+    - Revert changes in hunk and file scope
+    - Preview changes
+    - See author of code/changes (git blame)
 - **Project Structure** with [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua). see project structure and interact with your file.
 - **Customized Start Screen** with [startify](https://github.com/mhinz/vim-startify), show your recently edited files and bookmarked files. you can also go to that file.
 
@@ -139,7 +145,7 @@ $ nvim
 - Explore GIT-related Plugin 
 - Config markdown plugin. seriously rn I use vsc*de for create this `readme.md`
 - Add keymap list in this readme
-- Replace Preview NVIM in this readme (tokioooo)
+- Update Preview NVIM in this readme (tokioooo)
 
 
 ## 📒 Additional Notes

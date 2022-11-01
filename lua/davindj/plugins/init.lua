@@ -18,12 +18,17 @@ vim.cmd("packadd packer.nvim")
 -- Packer Plugins
 return require('packer').startup(function()
     use { 'wbthomason/packer.nvim', opt = true }
+    
+    ---- UI
     use { 'rebelot/kanagawa.nvim' } -- OP colorscheme
     use { 'Shatur/neovim-ayu' } -- colorscheme
     use { 'folke/tokyonight.nvim' } -- MOST POPULAR & Quite dope for transparent bg colorscheme
     use { 'nvim-lualine/lualine.nvim' }
     use { 'kyazdani42/nvim-web-devicons' } -- required for lualine icon DONT FORGET TO INSTALL NERD FONT n Apply to term
-    use { 'andweeb/presence.nvim' } -- discord presence lesgoo. downside: disable by remove this plugin
+    use { 'lukas-reineke/indent-blankline.nvim' } -- Indent Highlighter
+
+
+    ---- QoL
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.0',
         requires = { 
@@ -36,9 +41,11 @@ return require('packer').startup(function()
             { 'nvim-lua/plenary.nvim' }, -- Harpoon rely on this plugin
         }
     }
-    use { 'mhinz/vim-startify' } -- vim start screen
     use { 'kyazdani42/nvim-tree.lua' }
+    use { 'numToStr/Comment.nvim' } -- Commentary Plugin
 
+
+    ---- IDE
     use { -- probably the best Syntax Highlighter tho
         'nvim-treesitter/nvim-treesitter',
         run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
@@ -66,8 +73,11 @@ return require('packer').startup(function()
         }
     }
 
-    use { 'lukas-reineke/indent-blankline.nvim' } -- Indent Highlighter
-    use { 'numToStr/Comment.nvim' } -- Commentary Plugin
+    use { 'lewis6991/gitsigns.nvim' } -- Git Diff in Line, Jump to Changes, and many git feature (to be explored)
+
+    ---- Other / Misc
+    use { 'mhinz/vim-startify' } -- vim start screen
+    use { 'andweeb/presence.nvim' } -- discord presence lesgoo. downside: disable by remove this plugin
 
 
     -- Auto setup config after cloning packer.nvim
