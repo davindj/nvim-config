@@ -20,6 +20,7 @@ return require('packer').startup(function()
     use { 'wbthomason/packer.nvim', opt = true }
     use { 'rebelot/kanagawa.nvim' } -- OP colorscheme
     use { 'Shatur/neovim-ayu' } -- colorscheme
+    use { 'folke/tokyonight.nvim' } -- MOST POPULAR & Quite dope for transparent bg colorscheme
     use { 'nvim-lualine/lualine.nvim' }
     use { 'kyazdani42/nvim-web-devicons' } -- required for lualine icon DONT FORGET TO INSTALL NERD FONT n Apply to term
     use { 'andweeb/presence.nvim' } -- discord presence lesgoo. downside: disable by remove this plugin

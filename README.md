@@ -35,10 +35,10 @@ This is my simple nvim 0.8.0 config for my daily working.
     - Show code context where we in such as func, class & others block (using [treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context))
 - **Project Structure** with [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua). see project structure and interact with your file.
 - **Customized Start Screen** with [startify](https://github.com/mhinz/vim-startify), show your recently edited files and bookmarked files. you can also go to that file.
-- **Discord Rich Presence** with [presence](https://github.com/andweeb/presence.nvim) , show what you working now and time ellapse in your discord.
+- **Discord Rich Presence** with [presence](https://github.com/andweeb/presence.nvim), show what you working now and time ellapse in your discord.
 
 ### Other Plugins
-- [neovim-ayu](https://github.com/Shatur/neovim-ayu), colorscheme. AYU FTW
+- [tokyonight](https://github.com/folke/tokyonight.nvim), colorscheme. TOKIOOOO FTW
 - [lspkind](https://github.com/onsails/lspkind.nvim), better cmp UI
 - [lualine](https://github.com/nvim-lualine/lualine.nvim), better statusline UI instead of native nvim statusline
 - [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons), icon
@@ -130,9 +130,8 @@ $ nvim
 
 
 ## 🎯 TODO Next
-- Try out other colorscheme
 - Mess around with Telescope
-- Create customized snippet
+- Create customized snippet w/ ultisnips
 - Explore linter plugin(?)
 - Explore Debugging Plugin
 - Explore GIT-related Plugin 
