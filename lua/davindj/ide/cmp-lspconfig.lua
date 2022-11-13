@@ -204,12 +204,16 @@ require("flutter-tools").setup {
   --     }
   --   end,
   -- },
+  dev_log = {
+    enabled = true,
+    open_cmd = "tabedit", -- command to use to open the log buffer
+  },
   widget_guides = {
-    enabled = false,
+    enabled = true,
   },
   closing_tags = {
     highlight = "Comment", -- highlight for the closing tag
-    prefix = "~>", -- character to use for close tag e.g. > Widget
+    prefix = "~> ", -- character to use for close tag e.g. > Widget
     enabled = true -- set to false to disable
   },
   dev_tools = {
