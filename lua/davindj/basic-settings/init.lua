@@ -45,3 +45,9 @@ for option, value in pairs(options) do
   vim.opt[option] = value
 end
 
+
+---- TMUX stuff
+-- enable italic
+vim.cmd('set t_ZH=[3m')
+vim.cmd('set t_ZR=[23m')
+
