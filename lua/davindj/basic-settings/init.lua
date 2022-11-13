@@ -39,7 +39,6 @@ local options = {
 
 vim.cmd 'syntax enable'
 vim.cmd 'filetype plugin indent on' -- CHECK what it does
-vim.cmd 'au TextYankPost * lua vim.highlight.on_yank {on_visual=false}' -- highlight on yank
 
 -- Apply Options
 for option, value in pairs(options) do

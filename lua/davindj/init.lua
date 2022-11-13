@@ -21,3 +21,6 @@ require('davindj.other')
 -- Keymap
 require('davindj.keymaps')
 
+-- AutoCommand
+require('davindj.autocmd')
+
