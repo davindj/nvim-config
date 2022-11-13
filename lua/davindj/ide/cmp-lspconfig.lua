@@ -1,3 +1,11 @@
+---- Diagnostic Sign until lspsaga FIX IT :)
+local signs = { Error = " ", Warning = " ", Hint = "ﴞ ", Information = " " }
+for type, icon in pairs(signs) do
+  local hl = "DiagnosticSign" .. type
+  -- Comment untul find proper Font / Icon
+  -- vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
+end
+
 ---- CMP CONFIGURATION
 local cmp = require'cmp'
 local lspkind = require('lspkind')
@@ -160,5 +168,64 @@ require('lspconfig')['tsserver'].setup{ -- JS & TS
     on_attach = on_attach,
     flags = lsp_flags,
     capabilities = capabilities
+}
+
+-- alternatively you can override the default configs
+require("flutter-tools").setup {
+  ui = {
+    -- the border type to use for all floating windows, the same options/formats
+    -- used for ":h nvim_open_win" e.g. "single" | "shadow" | {<table-of-eight-chars>}
+    border = "rounded",
+    -- This determines whether notifications are show with `vim.notify` or with the plugin's custom UI
+    -- please note that this option is eventually going to be deprecated and users will need to
+    -- depend on plugins like `nvim-notify` instead.
+    -- notification_style = 'native' | 'plugin'
+  },
+  decorations = {
+    statusline = {
+      -- set to true to be able use the 'flutter_tools_decorations.app_version' in your statusline
+      -- this will show the current version of the flutter app from the pubspec.yaml file
+      app_version = false,
+      -- set to true to be able use the 'flutter_tools_decorations.device' in your statusline
+      -- this will show the currently running device if an application was started with a specific
+      -- device
+      device = false,
+    }
+  },
+  -- debugger = { -- integrate with nvim dap + install dart code debugger
+  --   enabled = false,
+  --   run_via_dap = false, -- use dap instead of a plenary job to run flutter apps
+  --   -- if empty dap will not stop on any exceptions, otherwise it will stop on those specified
+  --   -- see |:help dap.set_exception_breakpoints()| for more info
+  --   exception_breakpoints = {}
+  --   register_configurations = function(paths)
+  --     require("dap").configurations.dart = {
+  --       <put here config that you would find in .vscode/launch.json>
+  --     }
+  --   end,
+  -- },
+  widget_guides = {
+    enabled = false,
+  },
+  closing_tags = {
+    highlight = "Comment", -- highlight for the closing tag
+    prefix = "~>", -- character to use for close tag e.g. > Widget
+    enabled = true -- set to false to disable
+  },
+  dev_tools = {
+    autostart = false, -- autostart devtools server if not detected
+    auto_open_browser = false, -- Automatically opens devtools in the browser
+  },
+  lsp = {
+    color = { -- show the derived colours for dart variables
+      enabled = false, -- whether or not to highlight color variables at all, only supported on flutter >= 2.10
+      background = false, -- highlight the background
+      foreground = false, -- highlight the foreground
+      virtual_text = true, -- show the highlight using virtual text
+      virtual_text_str = "■", -- the virtual text character to highlight
+    },
+    on_attach = on_attach,
+    capabilities = capabilities -- e.g. lsp_status capabilities
+  }
 }
 
