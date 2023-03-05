@@ -30,6 +30,7 @@ This is my simple nvim 0.8.0 config for my daily working.
     - AutoComplete. (using [cmp](https://github.com/hrsh7th/nvim-cmp))
     - Snippet. (using [ultisnips](https://github.com/SirVer/ultisnips))
     - Show Hint & Detail Parameter during Code Writing (using [lsp_signature](https://github.com/ray-x/lsp_signature.nvim))
+- **Linting** with [ale](https://github.com/dense-analysis/ale).
 - **Better source code highlighting and context navigation** with [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter).
     - Select function & classes with motion (using [treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects))
     - Show code context where we in such as func, class & others block (using [treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context))
@@ -140,7 +141,6 @@ $ nvim
 ## 🎯 TODO Next
 - Mess around with Telescope
 - Create customized snippet w/ ultisnips
-- Explore linter plugin(?)
 - Explore Debugging Plugin
 - Explore GIT-related Plugin 
 - Config markdown plugin. seriously rn I use vsc*de for create this `readme.md`

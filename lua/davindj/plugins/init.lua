@@ -77,6 +77,7 @@ return require('packer').startup(function()
     use { 'lewis6991/gitsigns.nvim' } -- Git Diff in Line, Jump to Changes, and many git feature (to be explored)
 
     use { 'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim' } -- Flutter Exclusive not rely on NVIM-LSP Config waw
+    use { 'dense-analysis/ale' } -- Linter plugin yay finally
 
     ---- Other / Misc
     use { 'mhinz/vim-startify' } -- vim start screen
