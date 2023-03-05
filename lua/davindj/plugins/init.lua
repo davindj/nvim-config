@@ -55,7 +55,7 @@ return require('packer').startup(function()
     use { 'nvim-treesitter/nvim-treesitter-context' }
 
     use { 'neovim/nvim-lspconfig' } -- MUST HAVE CONFIG for LSP
-    use { 'glepnir/lspsaga.nvim', branch = 'main' } -- GG LSP PLUGIN
+    use { 'glepnir/lspsaga.nvim', commit='b7b4777' } -- GG LSP PLUGIN
     use { 'ray-x/lsp_signature.nvim' }
 
     use { -- Completer Engine
