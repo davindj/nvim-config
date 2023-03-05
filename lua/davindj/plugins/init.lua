@@ -20,7 +20,7 @@ return require('packer').startup(function()
     use { 'wbthomason/packer.nvim', opt = true }
     
     ---- UI
-    use { 'rebelot/kanagawa.nvim' } -- OP colorscheme
+    -- use { 'rebelot/kanagawa.nvim' } -- OP colorscheme
     use { 'Shatur/neovim-ayu' } -- colorscheme
     use { 'folke/tokyonight.nvim' } -- MOST POPULAR & Quite dope for transparent bg colorscheme
     use { 'nvim-lualine/lualine.nvim' }
