@@ -24,6 +24,10 @@ noremap('n', '<bs>', '<nop>') -- disable backspace moving left
 noremap('i', 'jk', '<esc>') -- escape from insert mode by jk stroke
 
 ---- PLUGINS
+-- Packer
+noremap('n', '<leader><leader>r', '<cmd>:source %<cr>') -- [f]ind[e]xplicit
+noremap('n', '<leader><leader>i', '<cmd>:PackerSync<cr>') -- [f]ind[e]xplicit
+
 -- Telescope
 noremap('n', '<leader>fe', '<cmd>:Telescope find_files<cr>') -- [f]ind[e]xplicit
 noremap('n', '<leader>ff', '<cmd>:Telescope git_files<cr>') -- [f]find[f]iles git only
