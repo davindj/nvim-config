@@ -1,5 +1,9 @@
 require('telescope').setup{
     defaults = {
+        file_ignore_patterns = { 
+            "node_modules/.*" ,
+            ".git/.*"
+        },
         path_display = { 'truncate' },
         prompt_prefix = '(-0w0)੭ ',
         selection_caret = '➤',
