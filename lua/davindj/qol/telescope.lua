@@ -1,5 +1,6 @@
 require('telescope').setup{
     defaults = {
+        path_display = { 'truncate' },
         prompt_prefix = '(-0w0)੭ ',
         selection_caret = '➤',
         entry_prefix = '  ',
