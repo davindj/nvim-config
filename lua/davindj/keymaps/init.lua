@@ -30,6 +30,7 @@ noremap('n', '<leader><leader>i', '<cmd>:PackerSync<cr>') -- [f]ind[e]xplicit
 
 -- Telescope
 noremap('n', '<leader>fe', '<cmd>:Telescope find_files<cr>') -- [f]ind[e]xplicit
+noremap('n', '<leader>fE', '<cmd>:Telescope find_files hidden=true<cr>') -- [f]ind[E]xplicit (include dotfile)
 noremap('n', '<leader>ff', '<cmd>:Telescope git_files<cr>') -- [f]find[f]iles git only
 noremap('n', '<leader>fh', '<cmd>:Telescope help_tags<cr>') -- [f]ind[h]elp
 noremap('n', '<leader>fg', '<cmd>:Telescope live_grep<cr>') -- [f]ind[g]rep
