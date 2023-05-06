@@ -26,6 +26,7 @@ return require('packer').startup(function()
     use { 'nvim-lualine/lualine.nvim' }
     use { 'kyazdani42/nvim-web-devicons' } -- required for lualine icon DONT FORGET TO INSTALL NERD FONT n Apply to term
     use { 'lukas-reineke/indent-blankline.nvim' } -- Indent Highlighter
+    use { 'RRethy/vim-illuminate' } -- highlight text on cursor
 
 
     ---- QoL
