@@ -100,12 +100,6 @@ noremap_silent("n", "<A-d>", "<cmd>Lspsaga open_floaterm<CR>")
 noremap_silent("n", "<A-d>", "<cmd>Lspsaga open_floaterm lazygit<CR>")
 noremap_silent("t", "<A-d>", [[<C-\><C-n><cmd>Lspsaga close_floaterm<CR>]])
 
--- ALE Linter
-noremap_silent("n", "<leader>ll", "<cmd>ALEFix<CR>")
-noremap_silent("n", "<leader>ld", "<cmd>ALEDetail<CR>")
-noremap_silent("n", "<leader>le", "<cmd>ALENext<CR>")
-noremap_silent("n", "<leader>lE", "<cmd>ALEPrevious<CR>")
-
 -- Flutter-Tools (should prob find another keymap tho because overlap w/ telescope keybind f)
 noremap('n', '<leader>fo', '<cmd>:FlutterOutlineToggle<cr>') -- Prob most interactive outline
 noremap('n', '<leader>fr', '<cmd>:FlutterRun<cr>')
