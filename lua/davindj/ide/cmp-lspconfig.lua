@@ -52,6 +52,8 @@ cmp.setup({
         { name = 'ultisnips' }, -- For ultisnips users.
         { name = 'nvim_lsp' }, -- Completion from LSP
     },{ -- Seperate Buffer (LAST RESORT)
+        { name = 'path' },
+    },{
         { name = 'buffer' },
     }),
     preselect = cmp.PreselectMode.None, -- make sure select 1st element in AutoComplete. one of GO bug
