@@ -48,6 +48,10 @@ end
 
 ---- TMUX stuff
 -- enable italic
-vim.cmd('set t_ZH=[3m')
-vim.cmd('set t_ZR=[23m')
+vim.cmd [[
+    let &t_ZH="\e[3m"
+    let &t_ZR="\e[23m"
+]]
+-- vim.cmd('set t_ZH=[3m')
+-- vim.cmd('set t_ZR=[23m')
 
